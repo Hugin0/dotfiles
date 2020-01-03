@@ -11,13 +11,7 @@ for FILE in $( ls $DOT_DIR )
 do
 	#exclusion list
 	case $FILE in
-		"install.sh") 	
-			;;
-		"solarized") 
-			echo "$FILE doesn't need moved, stay put"
-			;;
-		"zsh") 
-			echo "random zsh resources, stay put"
+		"$0") 	
 			;;
 		"README.md")
 			;;
@@ -30,8 +24,8 @@ do
 done
 
 # Install Oh-My-Zsh
-if [[ -x `which wget` ]]; then
-	echo "Installing Oh-My-Zsh via wget"
-	sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-	echo "Done."
-fi
+# if [[ -x `which wget` ]]; then
+# 	echo "Installing Oh-My-Zsh via wget"
+# 	sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+# 	echo "Done."
+# fi
