@@ -8,5 +8,5 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory extendedglob
 unsetopt autocd notify
-bindkey -e
+bindkey -v
 # End of lines configured by zsh-newuser-install

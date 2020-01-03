@@ -11,12 +11,14 @@ for FILE in $( ls $DOT_DIR )
 do
 	#exclusion list
 	case $FILE in
-		"$0") 	
+		"`basename $0`") 	
+			# skip this file
 			;;
 		"README.md")
+			# skip the readme for the git repo
 			;;
 		*) 
-			echo "ln -s $DOT_DIR/$FILE .$FILE" 
+			echo "ln -s $DOT_DIR/$FILE $PWD/.$FILE" 
 			ln -s $DOT_DIR/$FILE .$FILE 
 			;;
 	esac
