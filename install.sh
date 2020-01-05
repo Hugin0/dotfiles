@@ -25,9 +25,6 @@ do
 
 done
 
-# Install Oh-My-Zsh
-# if [[ -x `which wget` ]]; then
-# 	echo "Installing Oh-My-Zsh via wget"
-# 	sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-# 	echo "Done."
-# fi
+echo "Grabbing and Installing Antigen from their Github"
+curl -L git.io/antigen > $DOT_DIR/zsh/antigen.zsh
+echo "Done."

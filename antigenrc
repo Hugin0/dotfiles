@@ -1,0 +1,16 @@
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+# builtin bundles
+antigen bundle git
+
+# external bundles
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# select theme
+antigen theme romkatv/powerlevel10k
+
+# Apply everything
+antigen apply

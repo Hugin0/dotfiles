@@ -2,6 +2,9 @@ if [[ -r ~/.aliasrc ]]; then
 	source ~/.aliasrc # command aliases
 fi
 
+source $HOME/.dotfiles/zsh/antigen.zsh
+antigen init $HOME/.antigenrc
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
