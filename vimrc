@@ -1,6 +1,6 @@
 " File: .vimrc
 " Author: swogs (james.swoger@gmail.com)
-" Last Updated: 
+" Last Updated: 02 Apr 2020
 
 set nocompatible
 filetype off
@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'dracula/vim',{'name':'dracula'}
 Plugin 'ap/vim-css-color'
 Plugin 'itchyny/lightline.vim'
+Plugin 'vifm/vifm.vim'
 
 call vundle#end()
 filetype plugin indent on

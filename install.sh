@@ -26,5 +26,7 @@ do
 done
 
 echo "Grabbing and Installing Antigen from their Github"
-curl -L git.io/antigen > $DOT_DIR/zsh/antigen.zsh
-echo "Done."
+curl -L git.io/antigen > $DOT_DIR/zsh/antigen.zsh && echo " ... Done."
+
+echo "Installing VimVundle ..."
+git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim || echo "Failed." && echo " ... Done."
