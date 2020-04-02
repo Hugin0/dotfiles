@@ -9,7 +9,7 @@ if [[ -r ~/.aliasrc ]]; then
 	source ~/.aliasrc # command aliases
 fi
 
-source $HOME/.dotfiles/zsh/antigen.zsh
+source $HOME/.dotFiles/zsh/antigen.zsh
 antigen init $HOME/.antigenrc
 
 # Lines configured by zsh-newuser-install
